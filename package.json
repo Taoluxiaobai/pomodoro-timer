@@ -1,26 +1,29 @@
 {
-  "name": "pomodoro-timer",
-  "version": "1.0.0",
-  "description": "A desktop Pomodoro timer application",
-  "main": "main.js",
+  "name": "pomodoro-tauri",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "pomodoro",
-    "timer",
-    "productivity"
-  ],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "@anthropic-ai/claude-code": "^2.1.201",
-    "electron": "^35.7.5"
+    "@tailwindcss/vite": "^4.3.2",
+    "@tauri-apps/api": "^2.11.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.2"
   },
-  "allowScripts": {
-    "@anthropic-ai/claude-code@2.1.201": true,
-    "electron@35.7.5": true
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.4",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
   }
 }
