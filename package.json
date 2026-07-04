@@ -1,0 +1,26 @@
+{
+  "name": "pomodoro-timer",
+  "version": "1.0.0",
+  "description": "A desktop Pomodoro timer application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "productivity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.1.201",
+    "electron": "^35.7.5"
+  },
+  "allowScripts": {
+    "@anthropic-ai/claude-code@2.1.201": true,
+    "electron@35.7.5": true
+  }
+}
